@@ -1,4 +1,3 @@
-// src/hooks/useRegister.tsx
 import { useState } from 'react';
 import localforage from 'localforage';
 import { v4 as uuidv4 } from 'uuid';
