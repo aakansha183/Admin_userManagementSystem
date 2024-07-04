@@ -1,4 +1,3 @@
-// src/utils/validationSchema.ts
 import * as Yup from 'yup';
 
 export const loginSchema = Yup.object({
