@@ -2,7 +2,7 @@ import React, { useState, useEffect, FormEvent } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, TextField, Button, Box, Link } from '@mui/material';
 import localforage from 'localforage';
-import { useAuth } from '../context/AuthContext'; // Import useAuth hook
+import { useAuth } from '../context/AuthContext'; 
 
 interface User {
   id: string;
@@ -15,7 +15,7 @@ interface User {
 
 const ProfilePage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const { logout } = useAuth(); // Access logout function from authentication context
+  const { logout } = useAuth(); 
   const [loading, setLoading] = useState(true);
   const [profile, setProfile] = useState<User | null>(null);
   const [error, setError] = useState<string | null>(null);
